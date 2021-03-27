@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'registrocentro.dart';
 
 void main() => runApp(MyApp());
 
