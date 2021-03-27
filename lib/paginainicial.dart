@@ -26,10 +26,7 @@ class PaginaInicial extends StatelessWidget {
                       margin: const EdgeInsets.only(left: 20.0, right: 20.0, top: 100),
                       width: 250,
                       height: 200,
-                      child: Image.network(
-                        "https://iconape.com/wp-content/png_logo_vector/mikasa-athlete-logo.png",
-                        fit: BoxFit.fill,
-                      ),
+                      child: Image.asset('lib/assets/logo.png'),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
@@ -64,7 +61,7 @@ class PaginaInicial extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      margin: const EdgeInsets.only(left: 20.0, right: 20.0, top: 2),
+                      margin: const EdgeInsets.only(left: 20.0, right: 20.0, top: 10),
                       child: TextButton(
                         child: Text("Registro Deportista"),
                         onPressed: () {
@@ -72,6 +69,7 @@ class PaginaInicial extends StatelessWidget {
                         }),
                     ),
                     Container(
+                      margin: const EdgeInsets.only(left: 20.0, right: 20.0, top: 10),
                       child: TextButton(
                         child: Text("Registro Centro Deportivo"),
                         onPressed: () {
