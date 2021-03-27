@@ -13,7 +13,18 @@ class RegistroCentro extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
-                  
+                  SizedBox(
+                    height: 30,
+                    width: 30,
+                  ),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(70.0),
+                    child: Image.network(
+                        'https://i.pinimg.com/736x/d9/7b/bb/d97bbb08017ac2309307f0822e63d082.jpg',
+                        height: 150.0,
+                        width: 150.0,
+                    ),
+                  ),
                   SizedBox(
                     height: 30,
                     width: 30,
