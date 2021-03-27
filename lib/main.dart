@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'registrocentro.dart';
 
-void main() => runApp(RegistroCentro());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
