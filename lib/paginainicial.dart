@@ -6,13 +6,13 @@ class PaginaInicial extends StatelessWidget {
     return MaterialApp(
       title: 'Appthlete',
       home: Scaffold(
-
+        /*
         appBar: AppBar(
           centerTitle: true,
           title: Text(
             'Appthlete',
           ),
-        ),
+        ),*/
         body: SingleChildScrollView(
           child: Center(
             child: Container(
@@ -21,7 +21,18 @@ class PaginaInicial extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
                     SizedBox(
-                      height: 150,
+                      height: 100,
+                    ),
+                    Container(
+                      width: 250,
+                      height: 200,
+                      child: Image.network(
+                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwuKz50PSjCaLRrZ6G2JH3uttHD3KHWWK-9g&usqp=CAU",
+                        fit: BoxFit.fill,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 25,
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
@@ -50,7 +61,7 @@ class PaginaInicial extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: 35,
+                      height: 15,
                     ),
                     Container(
                       width: 100,
