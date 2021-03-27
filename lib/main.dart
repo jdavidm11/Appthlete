@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'registrocentro.dart';
 
-void main() => runApp(RegistroCentro());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
@@ -24,8 +24,27 @@ class MyApp extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.all(16.0),
-                    child: TextField(
-                      decoration: InputDecoration(labelText: "USUARIO"),
+                    child: Container(
+                      width: 250,
+                      child: TextField(
+                        decoration: InputDecoration(
+                            labelText: "USUARIO", border: OutlineInputBorder()),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 30,
+                    width: 30,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      width: 250,
+                      child: TextField(
+                        decoration: InputDecoration(
+                            labelText: "CONTRASEÑA",
+                            border: OutlineInputBorder()),
+                      ),
                     ),
                   )
                 ],
