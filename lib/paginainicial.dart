@@ -1,3 +1,5 @@
+
+
 import 'package:flutter/material.dart';
 
 class PaginaInicial extends StatelessWidget {
@@ -68,7 +70,7 @@ class PaginaInicial extends StatelessWidget {
                       child: ElevatedButton(
                         child: Text("INGRESO"),
                         onPressed: () {
-                          _ingresoDeportista();
+                          ingresoDeportista(context);
                         },
                       ),
                     ),
@@ -78,8 +80,7 @@ class PaginaInicial extends StatelessWidget {
                     TextButton(
                         child: Text("Registro Deportista"),
                         onPressed: () {
-                          Navigator.pushNamed(context, '/deportistaregistro');
-                          _registroDeportista();
+                          registroDeportista(context);
                         }),
                     SizedBox(
                       height: 2,
@@ -87,8 +88,7 @@ class PaginaInicial extends StatelessWidget {
                     TextButton(
                         child: Text("Registro Centro Deportivo"),
                         onPressed: () {
-                          Navigator.pushNamed(context, '/centroregistro');
-                          _registroCentroDeportivo();
+                          registroCentroDeportivo(context);
                         }),
                   ],
                 ),
@@ -100,15 +100,17 @@ class PaginaInicial extends StatelessWidget {
     );
   }
 
-  void _ingresoDeportista() {
+  void ingresoDeportista(BuildContext context) {
     print("Ingreso deportista");
   }
 
-  void _registroDeportista() {
+  void registroDeportista(BuildContext context) {
+    Navigator.pushNamed(context, '/deportistaregistro');
     print("Registro Deportista");
   }
 
-  void _registroCentroDeportivo() {
+  void registroCentroDeportivo(BuildContext context) {
+    Navigator.pushNamed(context, '/centroregistro');
     print("Registro Centro Deportivo");
   }
 }
