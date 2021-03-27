@@ -22,10 +22,8 @@ class PaginaInicial extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
-                    SizedBox(
-                      height: 100,
-                    ),
                     Container(
+                      margin: const EdgeInsets.only(left: 20.0, right: 20.0, top: 100),
                       width: 250,
                       height: 200,
                       child: Image.network(
@@ -33,13 +31,10 @@ class PaginaInicial extends StatelessWidget {
                         fit: BoxFit.fill,
                       ),
                     ),
-                    SizedBox(
-                      height: 25,
-                    ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
-                        width: 250,
+                        margin: const EdgeInsets.only(left: 20.0, right: 20.0, top: 25),
                         child: TextField(
                           decoration: InputDecoration(
                             labelText: "USUARIO",
@@ -48,13 +43,10 @@ class PaginaInicial extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(
-                      height: 15,
-                    ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
-                        width: 250,
+                        margin: const EdgeInsets.only(left: 20.0, right: 20.0, top: 15),
                         child: TextField(
                           decoration: InputDecoration(
                               labelText: "CONTRASEÑA",
@@ -62,34 +54,30 @@ class PaginaInicial extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(
-                      height: 15,
-                    ),
                     Container(
-                      width: 100,
+                      margin: const EdgeInsets.only(left: 20.0, right: 20.0, top: 15.0),
                       child: ElevatedButton(
-                        child: Text("INGRESO"),
+                        child: Text("Iniciar Sesión"),
                         onPressed: () {
                           ingresoDeportista(context);
                         },
                       ),
                     ),
-                    SizedBox(
-                      height: 8,
-                    ),
-                    TextButton(
+                    Container(
+                      margin: const EdgeInsets.only(left: 20.0, right: 20.0, top: 2),
+                      child: TextButton(
                         child: Text("Registro Deportista"),
                         onPressed: () {
                           registroDeportista(context);
                         }),
-                    SizedBox(
-                      height: 2,
                     ),
-                    TextButton(
+                    Container(
+                      child: TextButton(
                         child: Text("Registro Centro Deportivo"),
                         onPressed: () {
                           registroCentroDeportivo(context);
                         }),
+                    ),
                   ],
                 ),
               ),
