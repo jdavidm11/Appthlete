@@ -5,7 +5,7 @@ class RegistroDeportista extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Appthlete'),
+          title: Text('Registro Deportista'),
         ),
         body: Center(
           child: Container(
