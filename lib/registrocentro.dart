@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'registrocentro.dart';
 
-void main() => runApp(RegistroCentro());
-
-class MyApp extends StatelessWidget {
+class RegistroCentro extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -25,7 +22,7 @@ class MyApp extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: TextField(
-                      decoration: InputDecoration(labelText: "USUARIO"),
+                      decoration: InputDecoration(labelText: "Soy una prueba"),
                     ),
                   )
                 ],
