@@ -27,7 +27,7 @@ class PaginaInicial extends StatelessWidget {
                       width: 250,
                       height: 200,
                       child: Image.network(
-                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwuKz50PSjCaLRrZ6G2JH3uttHD3KHWWK-9g&usqp=CAU",
+                        "https://iconape.com/wp-content/png_logo_vector/mikasa-athlete-logo.png",
                         fit: BoxFit.fill,
                       ),
                     ),
