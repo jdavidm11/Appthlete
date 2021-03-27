@@ -12,68 +12,72 @@ class PaginaInicial extends StatelessWidget {
             'Appthlete',
           ),
         ),
-        body: Center(
-          child: Container(
-            child: Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: <Widget>[
-                  SizedBox(
-                    height: 150,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      width: 250,
-                      child: TextField(
-                        decoration: InputDecoration(
-                            labelText: "USUARIO", border: OutlineInputBorder()),
+        body: SingleChildScrollView(
+          child: Center(
+            child: Container(
+              child: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    SizedBox(
+                      height: 150,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        width: 250,
+                        child: TextField(
+                          decoration: InputDecoration(
+                            labelText: "USUARIO",
+                            border: OutlineInputBorder(),
+                          ),
+                        ),
                       ),
                     ),
-                  ),
-                  SizedBox(
-                    height: 15,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      width: 250,
-                      child: TextField(
-                        decoration: InputDecoration(
-                            labelText: "CONTRASEÑA",
-                            border: OutlineInputBorder()),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        width: 250,
+                        child: TextField(
+                          decoration: InputDecoration(
+                              labelText: "CONTRASEÑA",
+                              border: OutlineInputBorder()),
+                        ),
                       ),
                     ),
-                  ),
-                  SizedBox(
-                    height: 35,
-                  ),
-                  Container(
-                    width: 100,
-                    child: ElevatedButton(
-                      child: Text("INGRESO"),
-                      onPressed: () {
-                        _ingresoDeportista();
-                      },
+                    SizedBox(
+                      height: 35,
                     ),
-                  ),
-                  SizedBox(
-                    height: 8,
-                  ),
-                  TextButton(
-                      child: Text("Registro Deportista"),
-                      onPressed: () {
-                        _registroDeportista();
-                      }),
-                  SizedBox(
-                    height: 2,
-                  ),
-                  TextButton(
-                      child: Text("Registro Centro Deportivo"),
-                      onPressed: () {
-                        _registroCentroDeportivo();
-                      }),
-                ],
+                    Container(
+                      width: 100,
+                      child: ElevatedButton(
+                        child: Text("INGRESO"),
+                        onPressed: () {
+                          _ingresoDeportista();
+                        },
+                      ),
+                    ),
+                    SizedBox(
+                      height: 8,
+                    ),
+                    TextButton(
+                        child: Text("Registro Deportista"),
+                        onPressed: () {
+                          _registroDeportista();
+                        }),
+                    SizedBox(
+                      height: 2,
+                    ),
+                    TextButton(
+                        child: Text("Registro Centro Deportivo"),
+                        onPressed: () {
+                          _registroCentroDeportivo();
+                        }),
+                  ],
+                ),
               ),
             ),
           ),
