@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class RegistroDeportista extends StatelessWidget {
+class InicioDeportista extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
