@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class RegistroDeportista extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return  Scaffold(
         appBar: AppBar(
           title: Text('Appthlete'),
         ),
@@ -13,7 +13,6 @@ class RegistroDeportista extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
-                  
                   SizedBox(
                     height: 30,
                     width: 30,
