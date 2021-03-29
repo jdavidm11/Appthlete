@@ -12,9 +12,10 @@ class ImagePickerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: double.infinity,
-      height: 150,
+      width: 100,
+      height: 100,
       decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(60),
           gradient: LinearGradient(
               colors: [Colors.cyan[300], Colors.cyan[800]],
               begin: Alignment.centerLeft,
@@ -27,7 +28,7 @@ class ImagePickerWidget extends StatelessWidget {
         onPressed: () {
           _showPickerOptions(context);
         },
-        iconSize: 90,
+        iconSize: 50,
         color: Colors.white,
       ),
     );
