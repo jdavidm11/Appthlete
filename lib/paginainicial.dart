@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 
 class PaginaInicial extends StatelessWidget {
@@ -23,7 +21,8 @@ class PaginaInicial extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
                     Container(
-                      margin: const EdgeInsets.only(left: 20.0, right: 20.0, top: 100),
+                      margin: const EdgeInsets.only(
+                          left: 20.0, right: 20.0, top: 100),
                       width: 250,
                       height: 200,
                       child: Image.asset('lib/assets/logo.png'),
@@ -31,7 +30,8 @@ class PaginaInicial extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
-                        margin: const EdgeInsets.only(left: 20.0, right: 20.0, top: 25),
+                        margin: const EdgeInsets.only(
+                            left: 20.0, right: 20.0, top: 25),
                         child: TextField(
                           decoration: InputDecoration(
                             labelText: "USUARIO",
@@ -43,7 +43,8 @@ class PaginaInicial extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
-                        margin: const EdgeInsets.only(left: 20.0, right: 20.0, top: 15),
+                        margin: const EdgeInsets.only(
+                            left: 20.0, right: 20.0, top: 15),
                         child: TextField(
                           decoration: InputDecoration(
                               labelText: "CONTRASEÑA",
@@ -52,7 +53,8 @@ class PaginaInicial extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      margin: const EdgeInsets.only(left: 20.0, right: 20.0, top: 15.0),
+                      margin: const EdgeInsets.only(
+                          left: 20.0, right: 20.0, top: 15.0),
                       child: ElevatedButton(
                         child: Text("Iniciar Sesión"),
                         onPressed: () {
@@ -61,20 +63,22 @@ class PaginaInicial extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      margin: const EdgeInsets.only(left: 20.0, right: 20.0, top: 10),
+                      margin: const EdgeInsets.only(
+                          left: 20.0, right: 20.0, top: 10),
                       child: TextButton(
-                        child: Text("Registro Deportista"),
-                        onPressed: () {
-                          registroDeportista(context);
-                        }),
+                          child: Text("Registro Deportista"),
+                          onPressed: () {
+                            registroDeportista(context);
+                          }),
                     ),
                     Container(
-                      margin: const EdgeInsets.only(left: 20.0, right: 20.0, top: 10),
+                      margin: const EdgeInsets.only(
+                          left: 20.0, right: 20.0, top: 10),
                       child: TextButton(
-                        child: Text("Registro Centro Deportivo"),
-                        onPressed: () {
-                          registroCentroDeportivo(context);
-                        }),
+                          child: Text("Registro Centro Deportivo"),
+                          onPressed: () {
+                            registroCentroDeportivo(context);
+                          }),
                     ),
                   ],
                 ),
@@ -88,6 +92,7 @@ class PaginaInicial extends StatelessWidget {
 
   void ingresoDeportista(BuildContext context) {
     print("Ingreso deportista");
+    Navigator.pushNamed(context, '/iniciodeportista');
   }
 
   void registroDeportista(BuildContext context) {
