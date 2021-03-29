@@ -1,6 +1,16 @@
+import 'dart:io';
+
+import 'package:appthlete/imagepicker.dart';
 import 'package:flutter/material.dart';
 
-class RegistroCentro extends StatelessWidget {
+class RegistroCentro extends StatefulWidget {
+  @override
+  _RegistroCentroState createState() => _RegistroCentroState();
+}
+
+class _RegistroCentroState extends State<RegistroCentro> {
+  File imageFile;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,6 +23,13 @@ class RegistroCentro extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
+                ImagePickerWidget(
+                    imageFile: this.imageFile,
+                    onIMageSelected: (File file) {
+                      setState(() {
+                        imageFile = file;
+                      });
+                    }),
                 SizedBox(
                   height: 30,
                   width: 30,
@@ -23,9 +40,9 @@ class RegistroCentro extends StatelessWidget {
                     width: 250,
                     child: TextField(
                       decoration: InputDecoration(
-                          labelText: "Nombre",
-                          border: OutlineInputBorder(),
-                          icon: Icon(Icons.account_circle)),
+                        labelText: "Nombre",
+                        border: OutlineInputBorder(),
+                      ),
                     ),
                   ),
                 ),

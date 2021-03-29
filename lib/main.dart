@@ -6,6 +6,7 @@ import 'registrodeportista.dart';
 import 'registrocentro.dart';
 import 'iniciocentro.dart';
 import 'iniciodeportista.dart';
+import 'solicituddeportista.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -14,7 +15,10 @@ void main() {
     routes: {
       '/': (context) => PaginaInicial(),
       '/deportistaregistro': (context) => RegistroDeportista(),
-      '/centroregistro': (context) => RegistroCentro()
+      '/centroregistro': (context) => RegistroCentro(),
+      '/iniciodeportista': (context) => InicioDeportista(),
+      '/iniciocentro': (context) => InicioCentro(),
+      '/iniciodeportista/solicitud': (context) => SolicitudDeportista(),
     },
   ));
 }

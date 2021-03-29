@@ -1,3 +1,5 @@
+
+
 import 'package:flutter/material.dart';
 
 class PaginaInicial extends StatelessWidget {
@@ -20,24 +22,16 @@ class PaginaInicial extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
-                    SizedBox(
-                      height: 100,
-                    ),
                     Container(
+                      margin: const EdgeInsets.only(left: 20.0, right: 20.0, top: 100),
                       width: 250,
                       height: 200,
-                      child: Image.network(
-                        "https://iconape.com/wp-content/png_logo_vector/mikasa-athlete-logo.png",
-                        fit: BoxFit.fill,
-                      ),
-                    ),
-                    SizedBox(
-                      height: 25,
+                      child: Image.asset('lib/assets/logo.png'),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
-                        width: 250,
+                        margin: const EdgeInsets.only(left: 20.0, right: 20.0, top: 25),
                         child: TextField(
                           decoration: InputDecoration(
                             labelText: "USUARIO",
@@ -46,13 +40,10 @@ class PaginaInicial extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(
-                      height: 15,
-                    ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
-                        width: 250,
+                        margin: const EdgeInsets.only(left: 20.0, right: 20.0, top: 15),
                         child: TextField(
                           decoration: InputDecoration(
                               labelText: "CONTRASEÑA",
@@ -60,36 +51,31 @@ class PaginaInicial extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(
-                      height: 15,
-                    ),
                     Container(
-                      width: 100,
+                      margin: const EdgeInsets.only(left: 20.0, right: 20.0, top: 15.0),
                       child: ElevatedButton(
-                        child: Text("INGRESO"),
+                        child: Text("Iniciar Sesión"),
                         onPressed: () {
-                          _ingresoDeportista();
+                          ingresoDeportista(context);
                         },
                       ),
                     ),
-                    SizedBox(
-                      height: 8,
-                    ),
-                    TextButton(
+                    Container(
+                      margin: const EdgeInsets.only(left: 20.0, right: 20.0, top: 10),
+                      child: TextButton(
                         child: Text("Registro Deportista"),
                         onPressed: () {
-                          Navigator.pushNamed(context, '/deportistaregistro');
-                          _registroDeportista();
+                          registroDeportista(context);
                         }),
-                    SizedBox(
-                      height: 2,
                     ),
-                    TextButton(
+                    Container(
+                      margin: const EdgeInsets.only(left: 20.0, right: 20.0, top: 10),
+                      child: TextButton(
                         child: Text("Registro Centro Deportivo"),
                         onPressed: () {
-                          Navigator.pushNamed(context, '/centroregistro');
-                          _registroCentroDeportivo();
+                          registroCentroDeportivo(context);
                         }),
+                    ),
                   ],
                 ),
               ),
@@ -100,15 +86,17 @@ class PaginaInicial extends StatelessWidget {
     );
   }
 
-  void _ingresoDeportista() {
+  void ingresoDeportista(BuildContext context) {
     print("Ingreso deportista");
   }
 
-  void _registroDeportista() {
+  void registroDeportista(BuildContext context) {
+    Navigator.pushNamed(context, '/deportistaregistro');
     print("Registro Deportista");
   }
 
-  void _registroCentroDeportivo() {
+  void registroCentroDeportivo(BuildContext context) {
+    Navigator.pushNamed(context, '/centroregistro');
     print("Registro Centro Deportivo");
   }
 }
