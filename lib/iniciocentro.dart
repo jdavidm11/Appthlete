@@ -22,7 +22,15 @@ class InicioCentro extends StatelessWidget {
               ),
               Container(
                 height: 250,
-                child: Card(
+                width: double.infinity,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: 5,
+                  itemBuilder: (BuildContext context, int index){
+                    return Container(
+                      height: 150,
+                      constraints: BoxConstraints(maxWidth: 200),
+                      child: Card(
                   color: Colors.grey.withOpacity(0.1),
                   child: ListView.builder(
                   scrollDirection: Axis.vertical,
@@ -57,6 +65,9 @@ class InicioCentro extends StatelessWidget {
                   },
                 ),
                 ),
+                    );
+                  }
+                  ),
               ),
               Container(
                 alignment: Alignment.centerLeft,
