@@ -87,6 +87,7 @@ class PaginaInicial extends StatelessWidget {
   }
 
   void ingresoDeportista(BuildContext context) {
+    Navigator.pushNamed(context, '/iniciocentro');
     print("Ingreso deportista");
   }
 

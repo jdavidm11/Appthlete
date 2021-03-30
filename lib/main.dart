@@ -7,6 +7,7 @@ import 'registrocentro.dart';
 import 'iniciocentro.dart';
 import 'iniciodeportista.dart';
 import 'solicituddeportista.dart';
+import 'anadiractvidades.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -19,6 +20,7 @@ void main() {
       '/iniciodeportista': (context) => InicioDeportista(),
       '/iniciocentro': (context) => InicioCentro(),
       '/iniciodeportista/solicitud': (context) => SolicitudDeportista(),
+      '/anadiractividades': (context) => AnadirActividades(),
     },
   ));
 }
