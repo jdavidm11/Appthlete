@@ -10,6 +10,11 @@ import 'solicituddeportista.dart';
 import 'anadiractvidades.dart';
 import 'editarmembresia.dart';
 import 'solicituddeportistacentro.dart';
+import 'crearactividad.dart';
+import 'crearmembresia.dart';
+import 'veractividad.dart';
+import 'vermembresia.dart';
+import 'verdeportista.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -17,14 +22,22 @@ void main() {
     initialRoute: '/',
     routes: {
       '/': (context) => PaginaInicial(),
+
       '/deportistaregistro': (context) => RegistroDeportista(),
-      '/centroregistro': (context) => RegistroCentro(),
       '/iniciodeportista': (context) => InicioDeportista(),
-      '/iniciocentro': (context) => InicioCentro(),
       '/solicituddeportista': (context) => SolicitudDeportista(),
+
+      '/centroregistro': (context) => RegistroCentro(),
+      '/iniciocentro': (context) => InicioCentro(),
       '/anadiractividades': (context) => AnadirActividades(),
+      '/crearactividad': (context) => CrearActividad(),
+      '/veractividad': (context) => VerActividad(),
       '/anadirmembresia': (context) => AnadirMembresia(),
-      '/anadirdeportistacentro': (context) => SolicitudIngresoDeportista()
+      '/crearmembresia': (context) => CrearMembresia(),
+      '/vermembresia': (context) => VerMembresia(),
+      '/anadirdeportistacentro': (context) => SolicitudIngresoDeportista(),
+      '/verdeportista': (context) => VerDeportista(),
+    
     },
   ));
 }

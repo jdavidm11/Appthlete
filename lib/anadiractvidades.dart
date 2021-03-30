@@ -28,6 +28,7 @@ class AnadirActividades extends StatelessWidget {
                     width: 100,
                     child: TextButton(
                     onPressed: (){
+                       Navigator.pushNamed(context, '/crearactividad');
                       print('botton');
                     },
                      child: Text('Anadir')
@@ -51,7 +52,7 @@ class AnadirActividades extends StatelessWidget {
                       child: InkWell(
                         onTap: (){
                           print(index);
-                          Navigator.pushNamed(context, '/anadirdeportistacentro');
+                          Navigator.pushNamed(context, '/veractividad');
                         },
                         child:  Padding(
                         padding: const EdgeInsets.all(16.0),

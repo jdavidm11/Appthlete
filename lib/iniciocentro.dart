@@ -90,6 +90,7 @@ class InicioCentro extends StatelessWidget {
                       child: InkWell(
                         onTap: (){
                           print(index);
+                          Navigator.pushNamed(context, '/verdeportista');
                         },
                         child:  Padding(
                         padding: const EdgeInsets.all(16.0),
