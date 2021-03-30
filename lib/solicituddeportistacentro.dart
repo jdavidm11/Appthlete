@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class AnadirActividades extends StatelessWidget {
+class SolicitudIngresoDeportista extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Actividades Centro Deportivo'),
+          title: Text('Solicitud Deportista'),
         ),
         body: Container(
-          
-        ),
+
+        )
       );
   }
 }

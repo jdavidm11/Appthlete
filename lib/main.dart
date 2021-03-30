@@ -8,6 +8,8 @@ import 'iniciocentro.dart';
 import 'iniciodeportista.dart';
 import 'solicituddeportista.dart';
 import 'anadiractvidades.dart';
+import 'editarmembresia.dart';
+import 'solicituddeportistacentro.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -19,8 +21,10 @@ void main() {
       '/centroregistro': (context) => RegistroCentro(),
       '/iniciodeportista': (context) => InicioDeportista(),
       '/iniciocentro': (context) => InicioCentro(),
-      '/iniciodeportista/solicitud': (context) => SolicitudDeportista(),
+      '/solicituddeportista': (context) => SolicitudDeportista(),
       '/anadiractividades': (context) => AnadirActividades(),
+      '/anadirmembresia': (context) => AnadirMembresia(),
+      '/anadirdeportistacentro': (context) => SolicitudIngresoDeportista()
     },
   ));
 }
