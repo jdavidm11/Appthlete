@@ -23,6 +23,14 @@ class CrearActividad extends StatelessWidget {
                       ),
                     ),
               
+              Container(
+                      child: TextField(
+                        decoration: InputDecoration(
+                            labelText: "Cantidad Personas",
+                            border: OutlineInputBorder()),
+                      ),
+                    ),
+              
                Container(
                 alignment: Alignment.centerLeft,
                 margin: const EdgeInsets.only(
